@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #A4ACAF;
+    background-color: #fdecd4;
 }
 
 #viewport {
@@ -13,7 +13,7 @@
 
 #wrapper {
     display: grid;
-    grid-template-columns: repeat(32, 1fr);
+    /* grid-template-columns: repeat(32, 1fr); */
     gap: 10px;
     /* grid-template-rows: repeat(32, 1fr); */
     column-gap: 0px;
@@ -23,5 +23,38 @@
   }
 
 #options {
+    padding: 5px;
+}
 
+button {
+    padding: 5px;
+    margin: 2px;
+    border-radius: 2px;
+    background-color: #ffc0cb;
+}
+
+label {
+    display: block;
+}
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imageItem {
+    align-items: center;
+    text-align: center;
+}
+
+.savedImage {
+    height: 100px;
+    display: block;
+}
+
+.imageBtn {
+    width: 120px;
+    border: white solid 1px;
+    background-color: rgb(255, 222, 227);
 }

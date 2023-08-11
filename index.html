@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
     <script src="./main.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="./save.js" defer></script>
+    <script src="./reload.js" defer></script>
+    <script src="./image.js" defer></script>
+    <script src="./fill.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Pixel Art Moment</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="viewport">
-        <div id="wrapper">
+      <div id="wrapper"></div>
+      <div id="options">
+        <label for="colorpicker">Colour</label>
+        <input id="colorPick" type="color" id="colorpicker" value="#ffc0cb" />
+        <label for="col">Columns: </label>
+        <input type="number" id="col" name="col" min="1" max="100" />
+        <button type="button" id="colBtn">Generate</button>
+        <button type="button" id="fillTool">Fill</button>
+        <label for="artName">Artwork Name: </label>
+        <input type="text" id="artName" name="artName" />
+        <button type="button" id="artSave">Save Art</button>
+        <span id="errorMsg"></span>
+        <button type="button" id="imgBtn">Image</button>
+        <div id="previewImg"></div>
+        <div id="savedArt">
+          <h2>Saved Artworks:</h2>
+          <div id="imageGallery"></div>
         </div>
-        <div id="options">
-            Hello
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
