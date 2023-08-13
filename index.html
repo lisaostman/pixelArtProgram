@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
-    <script src="./main.js" defer></script>
-    <script src="./save.js" defer></script>
-    <script src="./reload.js" defer></script>
-    <script src="./image.js" defer></script>
-    <script src="./fill.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/save.js" defer></script>
+    <script src="./scripts/reload.js" defer></script>
+    <script src="./scripts/image.js" defer></script>
+    <script src="./scripts/undo.js" defer></script>
+    <!-- <script src="./fill.js" defer></script> -->
     <link rel="stylesheet" href="./style.css" />
     <title>Pixel Art Moment</title>
   </head>
@@ -26,7 +27,7 @@
         <input type="text" id="artName" name="artName" />
         <button type="button" id="artSave">Save Art</button>
         <span id="errorMsg"></span>
-        <button type="button" id="imgBtn">Image</button>
+        <button type="button" id="imgBtn">Download</button>
         <div id="previewImg"></div>
         <div id="savedArt">
           <h2>Saved Artworks:</h2>

@@ -13,16 +13,13 @@ saveBtn.addEventListener("click", function () {
   } else {
     const artName = document.getElementById("artName").value;
     const artHtml = document.getElementById("wrapper");
-    console.log(artHtml.children);
     let colours = [];
     for (i = 0; i < artHtml.children.length; i++) {
       let pixel = artHtml.children[i];
       let pixelColour = pixel.style.backgroundColor;
-      console.log(pixelColour);
       colours.push(`${pixelColour}`);
     }
-    console.log(colours);
-
+    console.log(`col num:` + colNum)
     html2canvas(document.getElementById("wrapper")).then(function (canvas) {
       // localStorage.setItem(artName+"image",canvas.toDataURL());
       let data = {

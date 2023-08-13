@@ -44,7 +44,6 @@ label {
 }
 
 .imageItem {
-    align-items: center;
     text-align: center;
 }
 
@@ -54,7 +53,7 @@ label {
 }
 
 .imageBtn {
-    width: 120px;
+    width: 100px;
     border: white solid 1px;
     background-color: rgb(255, 222, 227);
 }
